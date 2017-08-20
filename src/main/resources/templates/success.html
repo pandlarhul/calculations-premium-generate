@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Health Insurance</title>
+<style type="text/css">
+.register {
+	margin: 0 auto;
+	width: 419px;
+	padding: 20px;
+	background: #f4f4f4;
+}
+</style>
+</head>
+<body>
+	<div th:each="resp : ${response}" class="register">
+		<h1
+			th:text="'Health Insurance Premium for Mr.'+${resp.name}+' : '+${resp.amount}"
+			style="font-weight: bold; color: navy;">Response</h1>
+	</div>
+</body>
+</html>
