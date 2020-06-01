@@ -2,21 +2,63 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1" />
-<title>Health Insurance</title>
-<style type="text/css">
-.register {
-	margin: 0 auto;
-	width: 419px;
-	padding: 20px;
-	background: #f4f4f4;
-}
-</style>
+
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#myModal').modal('show');
+	});
+</script>
+
 </head>
 <body>
-	<div th:each="resp : ${response}" class="register">
-		<h1
-			th:text="'Health Insurance Premium for Mr.'+${resp.name}+' : '+${resp.amount}"
-			style="font-weight: bold; color: navy;">Response</h1>
+<!-- startinf main page content with form data-->
+
+
+<!--  ending main page content with form data-->
+
+
+
+
+	<!-- Modal code start here -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="health-insurance-premium-for"
+						style="text-align: center">Health Insurance Premium for</div>
+				</div>
+				<div   style="text-align: center">
+					<span th:text="${response.getName()}" class="mr-gomes" id="candidateName"></span>
+					 <span th:text="${response.getAmount()}" class="rectangle-6" id="amount"></span>
+				</div>
+				
+				<div class="modal-footer ">
+					<img th:src="@{/image/mbl.png}" class="img1 mt-3" /> <span
+						class="secure-payment-gateways 01">Secure Payment Gateways</span>
+					<img th:src="@{/image/11.png}" class="01" /> <img
+						th:src="@{/image/22.png}" class="02" /> <img
+						 th:src="@{/image/33.png}" class="03" />
+				</div>
+			
+			</div>
+		</div>
 	</div>
+<!-- model pop-up code end here -->
+
+
+
+	<!-- 	<div th:each="resp : ${response}" class="register"> -->
+	<!-- 		<h1 -->
+	<!-- 			th:text="'Health Insurance Premium for Mr.'+${resp.name}+' : '+${resp.amount}" -->
+	<!-- 			style="font-weight: bold; color: navy;">Response</h1> -->
+	<!-- 	</div> -->
 </body>
 </html>

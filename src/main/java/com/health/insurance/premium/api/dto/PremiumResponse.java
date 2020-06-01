@@ -1,5 +1,8 @@
 package com.health.insurance.premium.api.dto;
 
+
+
+
 public class PremiumResponse {
 	private String name;
 	private double amount;

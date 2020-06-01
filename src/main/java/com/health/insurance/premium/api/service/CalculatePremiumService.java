@@ -41,28 +41,28 @@ public class CalculatePremiumService {
 	}
 
 	private double getCostForHealthStatus(PremiumForm form, double amount) {
-		if (form.getBloodPressure().equalsIgnoreCase(Constants.YES)) {
+		if (form.isBloodPressure()) {
 			amount = amount + (amount * 0.01);
 		}
-		if (form.getBloodSugar().equalsIgnoreCase(Constants.YES)) {
+		if (form.isBloodSugar()) {
 			amount = amount + (amount * 0.01);
 		}
-		if (form.getHypertension().equalsIgnoreCase(Constants.YES)) {
+		if (form.isHypertension()) {
 			amount = amount + (amount * 0.01);
 		}
-		if (form.getOverWeight().equalsIgnoreCase(Constants.YES)) {
+		if (form.isOverWeight()) {
 			amount = amount + (amount * 0.01);
 		}
-		if (form.getAlcohol().equalsIgnoreCase(Constants.YES)) {
+		if (form.isAlcohol()) {
 			amount = amount + (amount * 0.03);
 		}
-		if (form.getDrugs().equalsIgnoreCase(Constants.YES)) {
+		if (form.isDrugs()) {
 			amount = amount + (amount * 0.03);
 		}
-		if (form.getSmoking().equalsIgnoreCase(Constants.YES)) {
+		if (form.isSmoking()) {
 			amount = amount + (amount * 0.03);
 		}
-		if (form.getDailyExercise().equalsIgnoreCase(Constants.YES)) {
+		if (form.isDailyExercise()) {
 			amount = amount - (amount * 0.03);
 		}
 		return amount;

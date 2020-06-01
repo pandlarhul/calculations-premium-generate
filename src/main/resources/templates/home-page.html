@@ -1,0 +1,230 @@
+<html xmlns:th="http://www.thymelef.org">
+<head>
+
+
+
+
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	crossorigin="anonymous" />
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+
+
+<!-- <link rel="stylesheet" href="assets/model-style.css" /> -->
+<!-- <link rel="stylesheet" href="css/form-css.css" /> -->
+
+
+<link rel="stylesheet" th:href="@{/css/form-css.css}" />
+<link rel="stylesheet" th:href="@{/css/model-style.css}" />
+
+</head>
+
+
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="logo">LOGO</div>
+
+			<div
+				class="collapse navbar-collapse img align-items-center mt-0 mb-0"
+				id="navbarN">
+				<ul class="navbar-nav ">
+					<li class="nav-item active">
+						<div class="why-xyxy-health-insurance-poli ml-5 mt-2">
+							Why <span class="text-warning">Xyxy </span> Health Insurance
+							Policy?
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="fast-cashless-coverage-4500-ho">Fast Cashless
+							Coverage @4500+ Hospitals</div>
+					</li>
+					<li class="nav-item ">
+						<!--   <a class="nav-link" href="#">Pricing</a> -->
+					</li>
+					<li class="nav-item alignright">
+						<div class="tax-benefits-u-s-80-d">Tax Benefitsu/s 80D</div>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+
+	<section class="img-with-form"
+		style="background: linear-gradient(90deg, #e8e8e8 0%, #e6e6e6 100%);">
+		<!--  paste your main content here-->
+		<!-- for showing pop-up window add the following properties in your submit button -->
+		<!-- data-toggle="modal" data-target="#exampleModal" -->
+
+		<!-- form section start here-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-md-8 col-lg-8">
+					<img th:src="@{/image/img/image.png}" alt="image"
+						class="mt-5 ml-0 p-0" width="725px" height="498px" />
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="card shadow bg-white" style="width: 22rem;">
+						<img class="form-icon" th:src="@{/image/img/ICON_1.png}"
+							alt="form image" />
+						<div class="container-parent">
+							<div class="form-container">
+								<form action="#" th:action="@{/insurence/calculatePremium}"
+									th:object="${premiumForm}" method="get" class="form-horizontal"
+									role="form">
+
+									<div class="form-group">
+										<div class="col-sm-12">
+											<input type="text" th:field="*{name}"
+												class="form-control name" placeholder=" &nbsp; Name" /> <span
+												class="gender mr-3">Gender:</span> <label
+												class="radio-inline mt-2 mr-2"> <input type="radio"
+												name="gender" class="green" value="male" />Male
+											</label> <label class="radio-inline "> <input type="radio"
+												name="gender" class="green" value="female" />Female
+											</label> <label class="radio-inline ml-4 "> <input
+												type="radio" name="gender" class="green" value="others" />Others
+											</label>
+											<hr class="mt-0 mb-0"
+												style="background-color: #808080; opacity: 0.5;" />
+											<input type="number" th:field="*{age}"
+												class="form-control name" placeholder=" &nbsp; Age" />
+											<p class="current-health mt-2 mb-1">Current Health</p>
+											<div class="radio text-left">
+												<label> <input type="checkbox" name="Hypertension"
+													class="red mt-1" value="hypertension"
+													th:field="*{hypertension}" /><span class="ml-2">Hypertension</span>
+												</label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="bloodPressure"
+													class="red" value="blood-pressure"
+													th:field="*{bloodPressure}" /><span class="ml-2">Blood
+														pressure</span> </label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="bloodSugar"
+													class="red" value="blood-sugar" th:field="*{bloodSugar}" /><span
+													class="ml-2">Blood sugar</span> </label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="overWeight"
+													class="red" value="overweight" th:field="*{overWeight}" /><span
+													class="ml-2">Overweight</span></label>
+											</div>
+											<p class="current-health mb-1 text-left">Habits</p>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="smoking"
+													class="green" value="smoking" th:field="*{smoking}" /><span
+													class="ml-2">Smoking </span> </label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="alcohol"
+													class="green" value="alcohol" th:field="*{alcohol}" /><span
+													class="ml-2">Alcohol </span> </label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="dailyExercise"
+													class="green" value="daily-exercise"
+													th:field="*{dailyExercise}" /><span class="ml-2">Daily
+														exercise</span> </label>
+											</div>
+											<div class="radio text-left">
+												<label><input type="checkbox" name="drugs"
+													class="green" value="drugs" th:field="*{drugs}" /><span
+													class="ml-2">Drugs</span></label>
+											</div>
+											<button type="submit"
+												class="btn btn-warning btn-sm btn-block font-weight-bold"
+												style="background-color: #fdb71d;" id="sub">SUBMIT</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+
+	<footer>
+		<div class="d-flex bd-highlight img-footer-left">
+			<div class="w-100 bd-highlight mt-4 ml-4" style="color: white;">
+				Buy Xyxy Health Insurance and secure your happiness today!</div>
+
+			<div class=" img-footer-right"></div>
+		</div>
+	</footer>
+
+
+
+	<!-- Modal code start here -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="health-insurance-premium-for"
+						style="text-align: center">Health Insurance Premium for
+					</div>
+				</div>
+				<div style="text-align: center" th:if="${response != null}" class="h3">
+					<span th:text="${response.getName()}" class="mr-gomes"
+						id="candidateName"></span> :<span th:text="${response.getAmount()}"
+						class="rectangle-6" id="amount"></span>
+				</div>
+
+				<div class="modal-footer ">
+					<img th:src="@{/image/mbl.png}" class="img1 mt-3" /> <span
+						class="secure-payment-gateways 01">Secure Payment Gateways</span>
+					<img th:src="@{/image/11.png}" class="01" /> <img
+						th:src="@{/image/22.png}" class="02" /> <img
+						th:src="@{/image/33.png}" class="03" />
+				</div>
+
+			</div>
+		</div>
+	</div>
+	 <!-- model pop-up code end here -->
+
+
+
+	<!--  script code -->
+<script th:inline="javascript">
+	let resp = [[${response}]];
+	//let mdl = document.getElementById('myModel');
+	
+	(function(){
+		if(resp!=null) {
+			$('#myModal').modal('show');
+		}
+	})();
+</script>
+</body>
+
+</html>
+

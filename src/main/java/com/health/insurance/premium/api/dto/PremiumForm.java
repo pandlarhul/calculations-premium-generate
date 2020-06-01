@@ -1,18 +1,21 @@
 package com.health.insurance.premium.api.dto;
 
 public class PremiumForm {
+	
 	private String name;
 	private String gender;
 	private int age;
-	private String smoking;
-	private String alcohol;
-	private String dailyExercise;
-	private String drugs;
-	private String Hypertension;
-	private String bloodPressure;
-	private String bloodSugar;
-	private String overWeight;
+	private boolean hypertension;
+	private boolean bloodPressure;
+	private boolean bloodSugar;
+	private boolean overWeight;
 
+	private boolean smoking;
+	private boolean alcohol;
+	private boolean dailyExercise;
+	private boolean drugs;
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -36,68 +39,70 @@ public class PremiumForm {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
-	public String getSmoking() {
+	
+	
+	
+	public boolean isSmoking() {
 		return smoking;
 	}
 
-	public void setSmoking(String smoking) {
+	public void setSmoking(boolean smoking) {
 		this.smoking = smoking;
 	}
 
-	public String getAlcohol() {
+	public boolean isAlcohol() {
 		return alcohol;
 	}
 
-	public void setAlcohol(String alcohol) {
+	public void setAlcohol(boolean alcohol) {
 		this.alcohol = alcohol;
 	}
 
-	public String getDailyExercise() {
+	public boolean isDailyExercise() {
 		return dailyExercise;
 	}
 
-	public void setDailyExercise(String dailyExercise) {
+	public void setDailyExercise(boolean dailyExercise) {
 		this.dailyExercise = dailyExercise;
 	}
 
-	public String getDrugs() {
+	public boolean isDrugs() {
 		return drugs;
 	}
 
-	public void setDrugs(String drugs) {
+	public void setDrugs(boolean drugs) {
 		this.drugs = drugs;
 	}
 
-	public String getHypertension() {
-		return Hypertension;
+	public boolean isHypertension() {
+		return hypertension;
 	}
 
-	public void setHypertension(String hypertension) {
-		Hypertension = hypertension;
+	public void setHypertension(boolean hypertension) {
+		this.hypertension = hypertension;
 	}
 
-	public String getBloodPressure() {
+	public boolean isBloodPressure() {
 		return bloodPressure;
 	}
 
-	public void setBloodPressure(String bloodPressure) {
+	public void setBloodPressure(boolean bloodPressure) {
 		this.bloodPressure = bloodPressure;
 	}
 
-	public String getBloodSugar() {
+	public boolean isBloodSugar() {
 		return bloodSugar;
 	}
 
-	public void setBloodSugar(String bloodSugar) {
+	public void setBloodSugar(boolean bloodSugar) {
 		this.bloodSugar = bloodSugar;
 	}
 
-	public String getOverWeight() {
+	public boolean isOverWeight() {
 		return overWeight;
 	}
 
-	public void setOverWeight(String overWeight) {
+	public void setOverWeight(boolean overWeight) {
 		this.overWeight = overWeight;
 	}
 
@@ -106,7 +111,7 @@ public class PremiumForm {
 		return "PremiumForm [name=" + name + ", gender=" + gender + ", age="
 				+ age + ", smoking=" + smoking + ", alcohol=" + alcohol
 				+ ", dailyExercise=" + dailyExercise + ", drugs=" + drugs
-				+ ", Hypertension=" + Hypertension + ", bloodPressure="
+				+ ", Hypertension=" + hypertension + ", bloodPressure="
 				+ bloodPressure + ", bloodSugar=" + bloodSugar
 				+ ", overweight=" + overWeight + "]";
 	}

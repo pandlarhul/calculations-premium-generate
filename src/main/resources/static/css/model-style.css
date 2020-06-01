@@ -1,0 +1,188 @@
+
+.rectangle-5 {
+  height: 352px;
+  width: 949px;
+  border-radius: 9px;
+  background-color: #FFF;
+}
+
+.health-insurance-premium-for {
+  height: 29px;
+  width: 600px;
+  color: #024282;
+  font-family: Arial;
+  font-size: 26px;
+  line-height: 29px;
+}
+.mr-gomes {
+  height: 29px;
+  width: 159px;
+  color: #1E1E1E;
+  font-family: Arial;
+  font-size: 26px;
+  line-height: 29px;
+  
+}
+.rectangle-6 {
+  box-sizing: border-box;
+  height: 78px;
+  width: 288px;
+  border: 1px solid #808080;
+}
+
+.secure-payment-gateways {
+  height: 16px;
+  width: 170px;
+  color: #464646;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.img1{
+  height: 60;
+  width: 160px;
+}
+
+.01 {
+  height: 22px;
+  width: 33px;
+background-image: url("11.png");
+
+}
+
+.02 {
+  height: 22px;
+  width: 33px;
+background-image: url("22.png");
+
+}
+
+.03 {
+  height: 21px;
+  width: 34px;
+background-image: url("33.png");
+
+}
+
+
+
+
+<!--   css for insurence-registration form header and footer-->
+.group {
+  height: 792px;
+  width: 1280px;
+}
+
+
+.logo {
+  height: 70px;
+  width: 186px;
+  color: #222121;
+  font-family: Arial;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 63px;
+}
+
+
+
+.rectangle-2 {
+  height: 85px;
+  width: 963px;
+  background-color: #024282;
+}
+
+
+.why-xyxy-health-insurance-poli {
+  height: 29px;
+  width: 418px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.fast-cashless-coverage-4500-ho {
+  height: 51px;
+  width: 179px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tax-benefits-u-s-80-d {
+  height: 51px;
+  width: 99px;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.alignright {
+	float: right;
+ background-repeat: no;
+}	
+
+.img{
+background-image: url("2.png");
+background-repeat:no-repeat;
+margin-left:200px;
+margin-top:0;
+margin-bottom:0;
+
+
+}
+.align-center{
+text-align:center;
+}
+
+
+.  {
+  height: 18px;
+  width: 500px;
+  color: #FFF;
+  font-family: Calibri;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
+
+<!--   footer section css -->
+
+
+.buy-xyxy-health-insurance-and {
+  height: 18px;
+  width: 500px;
+  color: #FFF;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
+.img-footer-left{
+background-image: url("fl.png");
+  height: 85px;
+  width: 100%;
+ }
+
+.img-footer-right{
+background-image: url("fr.png");
+background-repeat:no-repeat;
+  height: 85px;
+  width: 1000px;
+  
+}
+.rectangle-bottom {
+  height: 85px;
+  width: 100%;
+  background-color: #024282;
+}
+
+
+
+
